@@ -1,1 +1,14 @@
-prueba
+{% load django_browser_reload %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro {{titulo}}</title>
+</head>
+<body>
+    <h3> {{ titulo }} </h3>
+    <p>{{autor}}</p>
+</body>
+</html>
