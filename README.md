@@ -11,3 +11,7 @@ To run this application:
 ```python
 python manage.py runserver
 ```
+
+MODELOS:
+python3 manage.py makemigrations -- AL HACER CAMBIOS EN LOS MODELOS
+python3 manage.py migrate -- PARA EJECUTAR LOS CAMBIOS EN LOS MODELOS
