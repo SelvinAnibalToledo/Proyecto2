@@ -44,6 +44,8 @@ class MovieCredit(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
     job = models.ForeignKey(Job, on_delete=models.CASCADE)
 
+    def __str__(self):
+        return 'Person {0}, movie: {1}'.format(self.person, self.movie)
 
 class MovieReview(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
